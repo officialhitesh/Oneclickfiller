@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>OneClickFiller</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="hero">
+      <div class="logo-wrap">
+        <div class="logo-blob"></div>
+        <img src="icon.png" alt="OneClickFiller" class="logo" />
+      </div>
+      <h1>OneClickFiller<span class="dot">.</span></h1>
+      <p class="tag">Fill your feedback form in a blink ⚡</p>
+    </header>
+
+    <section class="card">
+      <label class="label">Pick your vibe for rating questions</label>
+      <div class="chips" id="rating-chips">
+        <button class="chip" data-rating="strongly agree">🔥 Strongly Agree</button>
+        <button class="chip" data-rating="agree">✅ Agree</button>
+        <button class="chip" data-rating="neutral">😐 Neutral</button>
+        <button class="chip" data-rating="disagree">❌ Disagree</button>
+        <button class="chip" data-rating="strongly disagree">💀 Strongly Disagree</button>
+      </div>
+
+      <label class="label">Yes / No questions</label>
+      <div class="chips" id="yesno-chips">
+        <button class="chip" data-yesno="yes">👍 Yes</button>
+        <button class="chip" data-yesno="no">👎 No</button>
+      </div>
+
+      <label class="label" for="comment">Your feedback comment</label>
+      <textarea id="comment" rows="3" placeholder="Type your comment here..."></textarea>
+
+      <label class="toggle">
+        <input type="checkbox" id="autosubmit" checked />
+        <span>Auto-submit after filling</span>
+      </label>
+
+      <button id="fill-btn" class="cta">
+        <span>Fill the Form</span>
+        <span class="spark">✨</span>
+      </button>
+      <p id="status" class="status"></p>
+    </section>
+
+    <footer class="disclaimer">
+      <strong>Disclaimer:</strong> OneClickFiller is a student-built helper. Please use a fair and honest decision while submitting your form. Your feedback shapes your teachers and your college — give responses that genuinely reflect your experience. The makers are not responsible for misuse, dishonest submissions, or any consequences arising from automated form filling. Use responsibly.
+      <div class="made">Made with 💜 by students of <b>Amity University</b></div>
+    </footer>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
